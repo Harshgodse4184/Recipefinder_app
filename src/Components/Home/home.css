@@ -1,0 +1,115 @@
+.banner {
+    background-image: url(./Home/banner3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    color: white;
+    font-size: larger;
+    height: 80vh;
+    animation-name: example;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes example {
+    0% {
+        background-image: url(../../../Home/banner1.jpg);
+    }
+
+    25% {
+        background-image: url(../../../Home/banner2.jpg);
+    }
+
+    50% {
+        background-image: url(../../../Home/banner3.jpg);
+    }
+
+    75% {
+        background-image: url(./Home/banner4.jpg);
+    }
+
+    100% {
+        background-image: url(./Home/banner2.jpg);
+    }
+}
+
+.banner h1 {
+    z-index: 1000;
+    border-color: white;
+}
+
+.btn_custom:hover {
+    transition: all .55s ease;
+    background: transparent;
+    border: 2px solid blue;
+    font-weight: bolder;
+}
+
+/* home card csss */
+.spinner {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color: #FFF #FFF transparent transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after,
+.loader::before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent transparent #FF3D00 #FF3D00;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotationBack 0.5s linear infinite;
+    transform-origin: center center;
+}
+
+.loader::before {
+    width: 32px;
+    height: 32px;
+    border-color: #FFF #FFF transparent transparent;
+    animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotationBack {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}

@@ -1,0 +1,16 @@
+.heading h1 {
+    color: #5d412c;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.heading p {
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+.title_card {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 1rem;
+    color: rgb(75, 35, 35);
+}
