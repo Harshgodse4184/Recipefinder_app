@@ -35,8 +35,8 @@ const RecipeDataProvider = ({ children }) => {
         // console.log(item);
     }
     // console.log(RecipeSearch)
-    const YOUR_APP_ID = 'ccdd911a';
-    const YOUR_APP_KEY = '08ad675a25ae98de77f5b765322f9efe';
+    const YOUR_APP_ID = 'MENTION-YOUR-API-ID';
+    const YOUR_APP_KEY = 'MENTION-YOUR-API-KEY';
     let API = `https://api.edamam.com/search?q=${RecipeSearch}&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}`
     const fetchAPIData = async (url) => {
         // console.log(RecipeSearch);
